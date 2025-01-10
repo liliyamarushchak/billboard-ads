@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Advertise Spot #1 - Utherverse Transport </title>
+
+   <script>
+var links = ["https://wg.redlightcenter.com/SaphyreRose",
+"https://wg.redlightcenter.com/Theresa6_A",
+"https://wg.redlightcenter.com/RosieLaS",
+"https://wg.redlightcenter.com/Koneko_Katana",
+"https://wg.redlightcenter.com/Ms_Tyler_Lane",
+"https://wg.redlightcenter.com/Temptrss_DHCD",
+"https://wg.redlightcenter.com/Passing_Glances",
+"https://wg.redlightcenter.com/XoSierraXo",
+"https://wg.redlightcenter.com/Tanya1of1",
+"https://forums.utherverse.com/yaf_postst148635_Free-Verified-WG-Ads.aspx"]; 
+// rotation urls. Needs to be same order as var image and var target. vww links should always be target "_self". First link will be associated with first image and first target. There needs to be equil amount of links, with images and with targets, so 3 links means, 3 images url, and 3 type of targets. Use # if you do not have an URL to associate the ad image with.
+
+var images = ["https://repository.redlightcenter.com/repository/textures/wgs/billboards/SaphyreRoseWGPoster512.png",
+"https://repository.redlightcenter.com/repository/textures/wgs/billboards/Theresa6_A.png",
+"https://www.utherverse.com/events/Image.ashx?mediaId=271577",
+"https://repository.redlightcenter.com/repository/textures/WGs/Ads/KonekoKatana.png",
+"https://repository.redlightcenter.com/repository/textures/wgs/ads/MsTL2022.png",
+"https://repository.redlightcenter.com/repository/textures/wgs/ads/Temptress_DHCD.png",
+"https://www.utherverse.com/events/Image.ashx?mediaId=402687",
+"https://repository.redlightcenter.com/repository/textures/wgs/billboards/XOSierawg.png",
+"https://repository.redlightcenter.com/repository/textures/wgs/billboards/Tanya_star.jpg",
+"https://repository.redlightcenter.com/repository/textures/WGs/WG_FreeVerifiedAd.png"]; 
+// rotation images. Needs to be same order as var links and var target. 
+
+var target = 
+["_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank",
+"_blank"]; 
+// rotation target. _self = changes the webpage/image displayed on self. _blank = opens a popup screen, _blank one is usually for external links you want to display in a webbrowser. If # is used as url, must be _self in the target.
+var i = 0;
+var renew = setInterval(function(){
+  if (links.length === i) {
+    i = 0;
+  }  else {
+    document.getElementById("bannerLink").href = links[i]; 
+    document.getElementById("bannerLink").target = target[i];
+    document.getElementById("bannerImage").src = images[i];
+    i++;
+  }
+},10000);
+        </script>
+
+<a id="bannerLink" href="https://wg.redlightcenter.com/SaphyreRose" 
+target="_blank"> <!-- change href and target, if you want a different first ad. This image should still be included in the rotation, script above. -->
+  <img id="bannerImage" src="https://repository.redlightcenter.com/repository/textures/wgs/billboards/SaphyreRoseWGPoster512.png" "width="1024" height="1024" alt="Utherverse Ads"> <!-- change src link to change first loaded image. This image should still be included in the rotation, script above. -->
+</a>
+
+</html>
+
+
+
+
+
+
+
+ 
+ 
